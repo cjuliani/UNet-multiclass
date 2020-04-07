@@ -1,0 +1,19 @@
+.img_size
+.n_class			# number of classes
+.in_dim				# input dimension
+.w_class			# class coef. for weighted loss | to be used if class imbalance
+.tot_epoch			# maximum number of training epochs
+.batch_size			# batch size for training
+.lr				# learning rate
+.dropout			# dropout rate
+.progress			# averaged metrics to show after X steps | to be used if large dataset
+.loss_thr			# loss value below which early stop is considered
+.valid_loss_thr			# loss value below which early stop is considered (validation)
+.loss_diff			# loss difference above which early stop is considered
+.early_stop			# number of epochs to trigger early stop if loss_diff do not decrease
+.chkpt_path			# checkpoint folder path
+.res_name			# model name to be restored | to be used for continuing or refining previous training
+.model_path			# path of model to restore
+.restore			# boolean | restore model if True
+.predict_path			# path of prediction folder
+.train_path			# path of training folder
