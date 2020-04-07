@@ -1,7 +1,6 @@
-# tf-unet-multiclass
-UNet for multiclass semantic segmentation
+# UNet for multiclass semantic segmentation
 
-The model supports multiclass segmentation. Two examples are given in the demo for terrain analysis.
+The demo was initially developed for segmenting terrain features. Input data are 256x256 pixels patch-based samples of elevation data and RGB terrain attributes transformed by principal component analysis. Annotations correspond to mounds (class-2) and mound summits (class-1). The project includes a sample generator which applies random data augmentation (position and colors).
 
 NOTES
 - Images and annotations have specific names, e.g. annotations_1_34, indicating the annotation #34 of class 1. The symbol underscore is required.
