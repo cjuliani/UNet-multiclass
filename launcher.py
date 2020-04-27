@@ -43,10 +43,10 @@ model = unet.unet()
 model.train(training_data=training_data,
 	validation_data=validation_data)
 
-	img_names = datasets.load_train(path=test_path+'images')            # input images
-	anno_names = datasets.load_train(path=test_path+'annotations')      # annotations (binary masks)
-	test_data = datasets.generator(img_names, anno_names, in_size)    	# get dataset
+img_names = datasets.load_train(path=test_path+'images')            # input images
+anno_names = datasets.load_train(path=test_path+'annotations')      # annotations (binary masks)
+test_data = datasets.generator(img_names, anno_names, in_size)    	# get dataset
 
-	model.test(test_data=test_data,restore=True)
+model.test(test_data=test_data,restore=True)
 
-	model.predict(in_size=512,output=1)
+model.predict(in_size=512,output=1)
