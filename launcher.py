@@ -1,5 +1,4 @@
 import os,json
-os.chdir("C:/Users/cyrilj/Desktop/github-unet-multiclass")
 import numpy as np
 import datasets,unet
 
