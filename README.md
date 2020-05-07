@@ -1,8 +1,9 @@
 # UNet for multiclass semantic segmentation
+![Tensorflow](https://img.shields.io/badge/Implemented%20in-Tensorflow-green.svg) <br>
 
 The demo was initially developed for segmenting terrain features. Input data are 256x256 pixels patch-based samples of elevation data and RGB terrain attributes transformed by principal component analysis. Annotations correspond to mounds (class-2) and mound summits (class-1). The project includes a sample generator which applies random data augmentation (position and colors).
 
-**NOTES**
+## NOTES
 - Images and annotations have specific names, e.g. annotations_1_34, indicating the annotation #34 of class 1. The symbol underscore is required.
 - Validation data can be either taken randomly from the training set with a percentage defined in config.json, and/or manually pre-defined in the datasets/validation folder.
 - Classes considered in the datasets must match the number of classes defined in in config.json.
