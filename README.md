@@ -12,4 +12,8 @@ The demo was initially developed for segmenting terrain features. Input data are
 - A pre-trained model is saved in /train/selected_checkpoint if a restoration is needed.
 - Summaries for training and validation are separated in 2 folders. Call /train/summary in TensorBoard for displaying both trends.
 
+| ![alt text](https://raw.githubusercontent.com/cjuliani/tf-unet-multiclass/master/unet-multiclass.png) |
+|:--:|
+| *Standard U-Net architecture for multi-class object segmentation in conv10_1 (class 1) and conv10_2 (class 2). Inputs consist of  RGB images and depth data (1+3+3 channels). The number of filters is indicated next to convolutional layers. Convolution operations (conv) use  kernels with ReLU as activation function, excepted for segmentation and the bottleneck. The total number of trainable parameters is 5,881,828.*
+
 *Make sure you use Python 3.x and that related libraries have correct versions for compatibility (see requirements). Especially, some modules of TensorFlow may be depreciated and do not work properly.*
