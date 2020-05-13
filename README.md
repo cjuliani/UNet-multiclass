@@ -1,9 +1,9 @@
 # UNet for multiclass semantic segmentation
 ![Tensorflow](https://img.shields.io/badge/Implemented%20in-Tensorflow-green.svg) <br>
 
-The demo was initially developed for segmenting terrain features. Input data are *256x256* pixels patch-based samples of elevation data and RGB terrain attributes transformed by principal component analysis. Annotations correspond to mounds (class-2) and mound summits (class-1). The project includes a sample generator which applies a built-in random data augmentation (position and colors) process.
+The demo was developed for segmenting topographic features. Input data are *256x256* pixels patch-based samples of elevation data and RGB terrain attributes transformed by principal component analysis. Annotations correspond to mounds (class-2) and mound summits (class-1). The project includes a sample generator with built-in random augmentation (position and colors) and batching systems, prediction and testing modules, and a data processing pipeline.
 
-## NOTES
+## Notes
 - Images and annotations have specific names, e.g. annotations_1_34, indicating the annotation #34 of class 1. The symbol underscore is required.
 - Validation data can be either taken randomly from the training set with a percentage defined in config.json, and/or manually pre-defined in the datasets/validation folder.
 - Classes considered in the datasets must match the number of classes defined in in config.json.
@@ -15,5 +15,3 @@ The demo was initially developed for segmenting terrain features. Input data are
 | ![alt text](https://raw.githubusercontent.com/cjuliani/tf-unet-multiclass/master/unet-multiclass.png) |
 |:--:|
 | *Standard U-Net architecture for multi-class object segmentation in conv10_1 (class 1) and conv10_2 (class 2). Inputs consist of  RGB images and depth data (1+3+3 channels). The number of filters is indicated next to convolutional layers. Convolution operations (conv) use  kernels with ReLU as activation function, excepted for segmentation and the bottleneck. The total number of trainable parameters is 5,881,828.*
-
-*Make sure you use Python 3.x and that related libraries have correct versions for compatibility (see requirements). Especially, some modules of TensorFlow may be depreciated and do not work properly.*
