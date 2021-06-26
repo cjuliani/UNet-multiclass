@@ -27,4 +27,4 @@ The demo was developed for segmenting topographic features. Input data are *256x
 
 | ![alt text](https://raw.githubusercontent.com/cjuliani/tf-unet-multiclass/master/curvature.PNG) |
 |:--:|
-| *Map-view examples of RGB curvature resulting from PCA-based data transformation. Annotated mounds consist of 2 sub-units: the convex base (class 2) and the summit (class 1)*|
+| *Map-view examples of U-Net input data i.e. RGB surface curvature resulting from PCA-based transformation of elevation data. Annotated mounds consist of 2 sub-units: the convex base (class 2) and the summit (class 1)*|
