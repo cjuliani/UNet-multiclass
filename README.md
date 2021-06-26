@@ -15,3 +15,16 @@ The demo was developed for segmenting topographic features. Input data are *256x
 | ![alt text](https://raw.githubusercontent.com/cjuliani/tf-unet-multiclass/master/unet-multiclass.png) |
 |:--:|
 | *Standard U-Net architecture for multi-class object segmentation in conv10_1 (class 1) and conv10_2 (class 2). Inputs consist of  RGB images and depth data (1+3+3 channels). The number of filters is indicated next to convolutional layers. Convolution operations (conv) use  kernels with ReLU as activation function, excepted for segmentation and the bottleneck. The total number of trainable parameters is 5,881,828.*
+
+| ![alt text](https://raw.githubusercontent.com/cjuliani/tf-unet-multiclass/master/bathymetry.png) |
+|:--:|
+| *Map-view example of processed digital surface data (2-m resolution) showing complex interplays between an eruptive center, individual and overlapping seafloor mounds (black dots and white contours, respectively), fault scarps and fractures, and sediment or lava flows (black arrows).*
+
+| ![alt text](https://raw.githubusercontent.com/cjuliani/tf-unet-multiclass/master/segmentation.png) |
+|:--:|
+| *Weighted predictive map of class 1 (multiplied by 0.3) and class 2 (0.7) superimposed on digital surface map.*
+
+
+| ![alt text](https://raw.githubusercontent.com/cjuliani/tf-unet-multiclass/master/curvature.png) |
+|:--:|
+| *Map-view examples of RGB curvature resulting from PCA-based data transformation. Annotated mounds consist of 2 sub-units: the convex base (class 2) and the summit (class 1)*
