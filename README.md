@@ -1,7 +1,14 @@
 # UNet for multiclass semantic segmentation
 ![Tensorflow](https://img.shields.io/badge/Implemented%20in-Tensorflow-green.svg) <br>
 
-The demo was developed for segmenting topographic features. Input data are *256x256* pixels patch-based samples of elevation data and RGB terrain attributes transformed by principal component analysis. Annotations correspond to mounds (class-2) and mound summits (class-1). The project includes a sample generator with built-in random augmentation (position and colors) and batching systems, prediction and testing modules, and a data processing pipeline.
+This repository provides the source code of U-Net for 2-class segmentation of topographic features. Baselines are described in Deep learning of terrain morphology and pattern discovery via network-based representational similarity analysis for deep-sea mineral exploration, by Juliani, C. and Juliani, E. The implementation is based on Python and Tensorflow. More details about this work can be found in the original paper, which is available at https://www.sciencedirect.com/science/article/pii/S0169136820311215
+
+Input data are squared images corresponding to patch samples of elevation data. Data were transformed into RGB terrain attributes using PCA method. Annotations correspond to convex-shaped topography (class-2) and their cone-shape summits (class-1). The project includes a sample generator with built-in random augmentation (position and colors), a batching system, prediction and testing modules, as well as a data processing pipeline.
+
+If you found this implementation useful, please consider citing us: Juliani, C., Juliani, E. (2020). Deep learning of terrain morphology and pattern discovery via network-based representational similarity analysis for deep-sea mineral exploration. Ore Geology Reviews, 129.
+
+Feel free to contact us if you discover any bugs in the code or if you have any questions.
+
 
 ## Notes
 - Images and annotations have specific names, e.g. annotations_1_34, indicating the annotation #34 of class 1. The symbol underscore is required.
